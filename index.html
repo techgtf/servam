@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <header class="header-main">
+        <div class="container">
+            <div class="flex justify-between items-center">
+                <a href="/" class="logo_side">
+                    <img src="assets/images/common/logo.png" alt="logo">
+                </a>
+                <div class="header-right flex items-center">
+                    <a class="button items-center text-white red-rose-400" href="tel:+919999112233">
+                        <img src="assets/images/common/call.svg" alt=""> 91 9999112233
+                    </a>
+                    <button class="menuIcon"><img src="assets/images/common/menu.svg" alt=""></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main-section">
+        <section class="hero-section">
+            <div class="hero-img-div">
+                <img src="assets/images/hero.png" alt="hero image">
+            </div>
+        </section>
+        <button class="openModal button filled-btn flex justify-center" onclick="toggleModal()">Click the modal!</button>
+        <div class="custom-modal">
+            <div class="modal-content">
+                <button class="close-button flex items-center justify-center" onclick="toggleModal()">×</button>
+                <h1>Hello, I am a modal!</h1>
+            </div>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+
+</body>
+
+</html>
