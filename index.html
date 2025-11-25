@@ -25,7 +25,7 @@
         </div>
     </header>
     <main class="main-section">
-        <section class="hero-section">
+        <section class="hero-section" id="hero-section">
             <div class="hero-img-div">
                 <img src="assets/images/hero.png" alt="hero image">
             </div>
@@ -44,11 +44,11 @@
                             <p class="red-rose-400 small-heading">Starting Price</p>
                             <h2 class="red-rose-400 large-heading">₹ 2.90 Cr* <small>Onwards</small></h2>
                         </div>
-                        <div class="box">
+                        <div class="box box-line">
                             <p class="red-rose-400 small-heading">Typology</p>
                             <h2 class="red-rose-400 large-heading">3 & 4 bhk apartments</h2>
                         </div>
-                        <div class="box">
+                        <div class="box box-line">
                             <p class="red-rose-400 small-heading">Status</p>
                             <h2 class="red-rose-400 large-heading">new launch</h2>
                         </div>
@@ -58,11 +58,40 @@
             </div>
 
         </section>
+
+        <!-- overview-section -->
+        <section class="overview-section" id="overview-section">
+            <div class="container">
+                <div class="heading-div">
+                    <h3 class="section-heading red-rose-300">
+                        SHAPED BY <b class="red-rose-400 text-red">WELLNESS</b>
+                        SURROUNDED BY <b class="red-rose-400 text-red">SERENITY</b></h3>
+                </div>
+                <div class="flex-div flex justify-between">
+                    <div class="left-side">
+                        <div class="line-div"></div>
+                        <p class="pera">Rooted in ancient Vaastu and wrapped in nature’s
+                            quiet rhythm, Signature Global Sarvam is more than
+                            a home, it’s a space shaped by intention and calm.
+                            Here, stillness lingers in the air and wellness unfolds
+                            in every detail, like morning light across a silent
+                            garden.</p>
+                        <button class="button filled-btn flex justify-center" onclick="toggleModal()">ENQUIRE
+                            NOW</button>
+                    </div>
+                    <div class="right-side flex justify-end">
+                        <img class="abs-img" src="assets/images/icons/dotes-vector.svg" alt="overview vector">
+                        <img class="main-img" src="assets/images/overview.jpg" alt="overview img">
+                        <img class="abs-img abs-img-1" src="assets/images/icons/dotes-vector.svg" alt="overview vector">
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
 
     <!-- custom Modal -->
-    <button class="openModal button filled-btn flex justify-center" onclick="toggleModal()">Click the modal!</button>
+    <!-- <button class="openModal button filled-btn flex justify-center" onclick="toggleModal()">Click the modal!</button> -->
     <div class="custom-modal">
         <div class="modal-content">
             <button class="close-button flex items-center justify-center" onclick="toggleModal()">×</button>
