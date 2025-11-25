@@ -25,6 +25,40 @@ let partnersSlider = new Swiper(".partners-slider", {
     },
 });
 
+$(".plans-btn").on("click", function () {
+    $(".plans-btn").removeClass("active");
+    $(this).addClass('active');
+    const target = $(this).data('target');
+    $(".plans-slider").removeClass("active-tab");
+    $("." + target).addClass("active-tab");
+})
+
+
+let floorPlansSlider = new Swiper(".floor-plans-slider", {
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    // effect: "fade",
+    // fadeEffect: {
+    //     crossFade: true,
+    // },
+    // mousewheel: true,
+    // keyboard: true,
+    // grabCursor: true,  
+});
+
+let masterPlansSlider = new Swiper(".master-plans-slider", {
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    fadeEffect: {
+        crossFade: true,
+    },
+});
+
+
 
 const modal = $(".custom-modal")
 function toggleModal() {
