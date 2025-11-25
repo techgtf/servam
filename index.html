@@ -29,15 +29,47 @@
             <div class="hero-img-div">
                 <img src="assets/images/hero.png" alt="hero image">
             </div>
-        </section>
-        <button class="openModal button filled-btn flex justify-center" onclick="toggleModal()">Click the modal!</button>
-        <div class="custom-modal">
-            <div class="modal-content">
-                <button class="close-button flex items-center justify-center" onclick="toggleModal()">×</button>
-                <h1>Hello, I am a modal!</h1>
+            <div class="hero-absolute-logo">
+                <img class="project-logo" src="assets/images/common/project-logo.png" alt="project logo">
+                <p class="location flex red-rose-400"> <img src="assets/images/icons/location-white.svg" alt="location">
+                    Sector 37D, DXP Estate, Gurugram
+                </p>
             </div>
-        </div>
+
+            <!-- hero-content -->
+            <div class="hero-content">
+                <div class="container">
+                    <div class="flex-div flex justify-between">
+                        <div class="box">
+                            <p class="red-rose-400 small-heading">Starting Price</p>
+                            <h2 class="red-rose-400 large-heading">₹ 2.90 Cr* <small>Onwards</small></h2>
+                        </div>
+                        <div class="box">
+                            <p class="red-rose-400 small-heading">Typology</p>
+                            <h2 class="red-rose-400 large-heading">3 & 4 bhk apartments</h2>
+                        </div>
+                        <div class="box">
+                            <p class="red-rose-400 small-heading">Status</p>
+                            <h2 class="red-rose-400 large-heading">new launch</h2>
+                        </div>
+                    </div>
+                    <button class="button red-rose-400" onclick="toggleModal()">ENQUIRE NOW</button>
+                </div>
+            </div>
+
+        </section>
     </main>
+
+
+    <!-- custom Modal -->
+    <button class="openModal button filled-btn flex justify-center" onclick="toggleModal()">Click the modal!</button>
+    <div class="custom-modal">
+        <div class="modal-content">
+            <button class="close-button flex items-center justify-center" onclick="toggleModal()">×</button>
+            <h1>Hello, I am a modal!</h1>
+        </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="assets/js/scripts.js"></script>
 
