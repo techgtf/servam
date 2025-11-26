@@ -1,3 +1,24 @@
+let header = $(".header-main");
+$(window).scroll(function () {
+    var scroll = $(window).scrollTop();
+    if (scroll >= 70) {
+        $(header).addClass("active");
+    } else {
+        $(header).removeClass("active");
+    }
+});
+
+$(window).scroll(function () {
+    var scroll = $(window).scrollTop();
+    if (scroll >= 700) {
+        $(".fixed-btn").addClass("active");
+    } else {
+        $(".fixed-btn").removeClass("active");
+    }
+});
+
+
+
 let partnersSlider = new Swiper(".partners-slider", {
     spaceBetween: 30,
     loop: true,
@@ -56,6 +77,22 @@ let masterPlansSlider = new Swiper(".master-plans-slider", {
     fadeEffect: {
         crossFade: true,
     },
+});
+
+var swiper = new Swiper(".gallerySwiper", {
+    slidesPerView: 1,
+    centeredSlides: true,
+    loop: true,
+    slidesPerView: 1.5,
+    spaceBetween: 50,
+    navigation: {
+        nextEl: ".swiper-button-next-gl",
+        prevEl: ".swiper-button-prev-gl"
+    },
+    pagination: {
+        el: ".swiper-pagination-gl",
+        clickable: true,
+    }
 });
 
 
