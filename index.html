@@ -22,11 +22,38 @@
                     <a class="button items-center text-white red-rose-400" href="tel:+919999112233">
                         <img src="assets/images/common/call.svg" alt=""> 91 9999112233
                     </a>
-                    <button class="menuIcon"><img src="assets/images/common/menu.svg" alt=""></button>
+                    <button class="menuIcon" onclick="menuOpen()">
+                        <img src="assets/images/common/menu.svg" alt=""></button>
                 </div>
             </div>
         </div>
     </header>
+
+    <div class="fixed-menu">
+        <div class="grid-div grid justify-between">
+            <div class="head-div flex justify-between">
+                <img class="logo" src="assets/images/common/logo-dark.png" alt="">
+                <button class="close-btn" onclick="menuClose()"><img src="assets/images/icons/close-btn.svg"
+                        alt=""></button>
+            </div>
+            <ul class="items">
+                <li><a class="red-rose-400 uppercase" href="Home">Home</a></li>
+                <li><a class="red-rose-400 uppercase" href="Overview">overview</a></li>
+                <li><a class="red-rose-400 uppercase" href="highlights">highlights</a></li>
+                <li><a class="red-rose-400 uppercase" href="Mudras">Mudras</a></li>
+                <li><a class="red-rose-400 uppercase" href="Partners">Partners</a></li>
+                <li><a class="red-rose-400 uppercase" href="floor-plans">Floor and Master plans</a></li>
+                <li><a class="red-rose-400 uppercase" href="amenities">amenities</a></li>
+                <li><a class="red-rose-400 uppercase" href="location-advantage">location Advantage</a></li>
+                <li><a class="red-rose-400 uppercase" href="gallery">gallery</a></li>
+                <li><a class="red-rose-400 uppercase" href="gallery">About Developer</a></li>
+            </ul>
+            <div class="flex-btns flex justify-between">
+                <button class="btn-btn active" onclick="toggleModal()">Enquire Now</button>
+                <a class="btn-btn active" href="tel:+917053121121">+917053121121</a>
+            </div>
+        </div>
+    </div>
 
     <main class="main-section">
         <section class="hero-section" id="hero-section">
@@ -248,7 +275,7 @@
                                     <h4 class="heading heading-short red-rose-400 uppercase">UNIT PLAN 4BHK+4T+U</h4>
                                 </div>
                                 <div class="plan-img-div">
-                                    <img class="plan-img" src="assets/images/floor.webp" alt="floorplan">
+                                    <img class="plan-img" src="assets/images/floor-plans/floor.webp" alt="floorplan">
                                     <button class="btn-btn view-btn uppercase boder-primary active"
                                         onclick="toggleModal()">View
                                         plan</button>
@@ -260,17 +287,80 @@
                                 <div class="plan-content-div">
                                     <h4 class="heading red-rose-400 uppercase">FLOOR PLANS PRECISION IN EVERY INCH</h4>
                                     <div class="line-div"></div>
-                                    <h4 class="heading heading-short red-rose-400 uppercase">UNIT PLAN 4BHK+4T+U</h4>
+                                    <h4 class="heading heading-short red-rose-400 uppercase">UNIT PLAN 3BHK+3T</h4>
                                 </div>
                                 <div class="plan-img-div">
-                                    <img class="plan-img" src="assets/images/floor.webp" alt="floorplan">
+                                    <img class="plan-img" src="assets/images/floor-plans/floor.webp" alt="floorplan">
                                     <button class="btn-btn view-btn uppercase boder-primary active"
                                         onclick="toggleModal()">View
                                         plan</button>
                                 </div>
                             </div>
                         </div>
-
+                        <div class="swiper-slide">
+                            <div class="flex-card flex justify-between">
+                                <div class="plan-content-div">
+                                    <h4 class="heading red-rose-400 uppercase">FLOOR PLANS PRECISION IN EVERY INCH</h4>
+                                    <div class="line-div"></div>
+                                    <h4 class="heading heading-short red-rose-400 uppercase">UNIT PLAN 3BHK+3T+U (TYPE
+                                        1)</h4>
+                                </div>
+                                <div class="plan-img-div">
+                                    <img class="plan-img" src="assets/images/floor-plans/floor.webp" alt="floorplan">
+                                    <button class="btn-btn view-btn uppercase boder-primary active"
+                                        onclick="toggleModal()">View
+                                        plan</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="flex-card flex justify-between">
+                                <div class="plan-content-div">
+                                    <h4 class="heading red-rose-400 uppercase">FLOOR PLANS PRECISION IN EVERY INCH</h4>
+                                    <div class="line-div"></div>
+                                    <h4 class="heading heading-short red-rose-400 uppercase">UNIT PLAN 3BHK+3T+U (TYPE
+                                        2)</h4>
+                                </div>
+                                <div class="plan-img-div">
+                                    <img class="plan-img" src="assets/images/floor-plans/floor.webp" alt="floorplan">
+                                    <button class="btn-btn view-btn uppercase boder-primary active"
+                                        onclick="toggleModal()">View
+                                        plan</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="flex-card flex justify-between">
+                                <div class="plan-content-div">
+                                    <h4 class="heading red-rose-400 uppercase">FLOOR PLANS PRECISION IN EVERY INCH</h4>
+                                    <div class="line-div"></div>
+                                    <h4 class="heading heading-short red-rose-400 uppercase">UNIT PLAN 3BHK+2T (TYPE 1)
+                                    </h4>
+                                </div>
+                                <div class="plan-img-div">
+                                    <img class="plan-img" src="assets/images/floor-plans/floor.webp" alt="floorplan">
+                                    <button class="btn-btn view-btn uppercase boder-primary active"
+                                        onclick="toggleModal()">View
+                                        plan</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="flex-card flex justify-between">
+                                <div class="plan-content-div">
+                                    <h4 class="heading red-rose-400 uppercase">FLOOR PLANS PRECISION IN EVERY INCH</h4>
+                                    <div class="line-div"></div>
+                                    <h4 class="heading heading-short red-rose-400 uppercase">UNIT PLAN 3BHK+2T (TYPE 2)
+                                    </h4>
+                                </div>
+                                <div class="plan-img-div">
+                                    <img class="plan-img" src="assets/images/floor-plans/floor.webp" alt="floorplan">
+                                    <button class="btn-btn view-btn uppercase boder-primary active"
+                                        onclick="toggleModal()">View
+                                        plan</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="ctrl-btns flex">
                         <div class="swiper-button-prev"></div>
@@ -281,21 +371,6 @@
                 <!-- master plan tab -->
                 <div class="swiper plans-slider master-plans-slider">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="flex-card flex justify-between">
-                                <div class="plan-content-div">
-                                    <h4 class="heading red-rose-400 uppercase">Master PLANS PRECISION IN EVERY INCH</h4>
-                                    <div class="line-div"></div>
-                                    <h4 class="heading heading-short red-rose-400 uppercase">master PLAN 4BHK+4T+U</h4>
-                                </div>
-                                <div class="plan-img-div">
-                                    <img class="plan-img" src="assets/images/master.webp" alt="master">
-                                    <button class="btn-btn view-btn uppercase boder-primary active"
-                                        onclick="toggleModal()">View
-                                        plan</button>
-                                </div>
-                            </div>
-                        </div>
                         <div class="swiper-slide">
                             <div class="flex-card flex justify-between">
                                 <div class="plan-content-div">
@@ -427,12 +502,13 @@
                         <img src="assets/images/map.webp" alt="loation map">
                     </div>
                     <ul class="location-adv-list capitalize">
-                        <li>10 min to delhi</li>
-                        <li>15 min to IGI airport</li>
-                        <li>10 mins to Yashobhoomi Asia's Largest Convention Center</li>
-                        <li>10 min to delhi</li>
-                        <li>15 min to IGI airport</li>
-                        <li>10 mins to Yashobhoomi Asia's Largest Convention Center</li>
+                        <li>10 mins to Delhi</li>
+                        <li>15 mins to IGI Airport</li>
+                        <li> 15 mins to Aerocity</li>
+                        <li>15 mins to Cyber City</li>
+                        <li>10 mins to Yashobhoomi Asia’s Largest
+                            Convention Center</li>
+                        <li>25 mins to Diplomatic Enclave II</li>
                     </ul>
                 </div>
                 <button class="button section-btn filled-btn flex justify-center" onclick="toggleModal()">ENQUIRE

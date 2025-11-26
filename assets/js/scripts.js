@@ -17,6 +17,17 @@ $(window).scroll(function () {
     }
 });
 
+function menuOpen() {
+    $(".fixed-menu").addClass("active")
+}
+function menuClose() {
+    $(".fixed-menu").removeClass("active")
+}
+
+const modal = $(".custom-modal")
+function toggleModal() {
+    modal.toggleClass("show-modal");
+}
 
 
 let partnersSlider = new Swiper(".partners-slider", {
@@ -96,8 +107,3 @@ var swiper = new Swiper(".gallerySwiper", {
 });
 
 
-
-const modal = $(".custom-modal")
-function toggleModal() {
-    modal.toggleClass("show-modal");
-}
