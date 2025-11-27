@@ -116,6 +116,10 @@ body{background: var(--primary); overflow-x: hidden;}
 .fixed-btn.active{z-index: 9; opacity: 1;}
 .fixed-btn .btn-btn {transform: rotate(90deg);transform-origin: right top;position: relative;right: 0;}
 
+.mobile-section {display: none;position: fixed;bottom: 0;left: 50%;transform: translateX(-50%);z-index: 990;background: var(--secondary-1);padding: 10px;box-shadow: rgba(0, 0, 0, .2) 0 2px 5px;width: 100%;}
+.mobile-section a {color: #fff;text-align: center;width: 32%;display: inline-block;font-size: 13px;flex: 1 1 0%;}
+.mobile-section a:not(:last-child) {border-right: 1px solid}
+
 /* .section-heading */
 .section-heading{line-height: 45px;}
 .section-heading, .section-heading b{font-size: 32px; text-transform: uppercase;}
