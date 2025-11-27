@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Servam – Premium Residences by Signature Global</title>
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 </head>
@@ -19,7 +20,7 @@
                     <img class="dark-log" src="assets/images/common/logo-dark.png" alt="logo">
                 </a>
                 <div class="header-right flex items-center">
-                    <a class="button items-center text-white red-rose-400" href="tel:+919999112233">
+                    <a class="button lg-block items-center text-white red-rose-400" href="tel:+919999112233">
                         <img src="assets/images/common/call.svg" alt=""> 91 9999112233
                     </a>
                     <button class="menuIcon" onclick="menuOpen()">
@@ -36,17 +37,17 @@
                 <button class="close-btn" onclick="menuClose()"><img src="assets/images/icons/close-btn.svg"
                         alt=""></button>
             </div>
-            <ul class="items">
-                <li><a class="red-rose-400 uppercase" href="Home">Home</a></li>
-                <li><a class="red-rose-400 uppercase" href="Overview">overview</a></li>
-                <li><a class="red-rose-400 uppercase" href="highlights">highlights</a></li>
-                <li><a class="red-rose-400 uppercase" href="Mudras">Mudras</a></li>
-                <li><a class="red-rose-400 uppercase" href="Partners">Partners</a></li>
-                <li><a class="red-rose-400 uppercase" href="floor-plans">Floor and Master plans</a></li>
-                <li><a class="red-rose-400 uppercase" href="amenities">amenities</a></li>
-                <li><a class="red-rose-400 uppercase" href="location-advantage">location Advantage</a></li>
-                <li><a class="red-rose-400 uppercase" href="gallery">gallery</a></li>
-                <li><a class="red-rose-400 uppercase" href="gallery">About Developer</a></li>
+            <ul class="items" onclick="menuClose()">
+                <li><a class="red-rose-400 uppercase" href="#Home">Home</a></li>
+                <li><a class="red-rose-400 uppercase" href="#overview">overview</a></li>
+                <li><a class="red-rose-400 uppercase" href="#highlights">highlights</a></li>
+                <li><a class="red-rose-400 uppercase" href="#mudras">Mudras</a></li>
+                <li><a class="red-rose-400 uppercase" href="#partners">Partners</a></li>
+                <li><a class="red-rose-400 uppercase" href="#floor-and-master-plan">Floor and Master plans</a></li>
+                <li><a class="red-rose-400 uppercase" href="#amenities">amenities</a></li>
+                <li><a class="red-rose-400 uppercase" href="#location-advantage">location Advantage</a></li>
+                <li><a class="red-rose-400 uppercase" href="#gallery">gallery</a></li>
+                <li><a class="red-rose-400 uppercase" href="#about-builder">About Developer</a></li>
             </ul>
             <div class="flex-btns flex justify-between">
                 <button class="btn-btn active" onclick="toggleModal()">Enquire Now</button>
@@ -56,12 +57,14 @@
     </div>
 
     <main class="main-section">
-        <section class="hero-section" id="hero-section">
+        <section class="hero-section" id="Home">
             <div class="hero-img-div">
-                <img src="assets/images/hero.webp" alt="hero image">
+                <img class="lg-block" src="assets/images/hero.webp" alt="hero image">
+                <img class="sm-block" src="assets/images/hero-mb.webp" alt="hero image">
             </div>
             <div class="hero-absolute-logo">
-                <img class="project-logo" src="assets/images/common/project-logo.png" alt="project logo">
+                <img class="project-logo lg-block" src="assets/images/common/project-logo.png" alt="project logo">
+                <img class="project-logo sm-block" src="assets/images/common/project-logo-dark.png" alt="project logo">
                 <p class="location flex red-rose-400"> <img src="assets/images/icons/location-white.svg" alt="location">
                     Sector 37D, DXP Estate, Gurugram
                 </p>
@@ -70,7 +73,7 @@
             <!-- hero-content -->
             <div class="hero-content">
                 <div class="container">
-                    <div class="flex-div flex justify-between">
+                    <div class="flex-div flex justify-between flex-wrap">
                         <div class="box">
                             <p class="red-rose-400 small-heading">Starting Price</p>
                             <h2 class="red-rose-400 large-heading">₹ 2.90 Cr* <small>Onwards</small></h2>
@@ -91,14 +94,14 @@
         </section>
 
         <!-- overview-section -->
-        <section class="overview-section" id="overview-section">
+        <section class="overview-section" id="overview" >
             <div class="container">
                 <div class="heading-div">
                     <h3 class="section-heading red-rose-300">
                         SHAPED BY <b class="red-rose-400 text-red">WELLNESS</b>
                         SURROUNDED BY <b class="red-rose-400 text-red">SERENITY</b></h3>
                 </div>
-                <div class="flex-div flex justify-between">
+                <div class="flex-div flex justify-between flex-wrap">
                     <div class="left-side">
                         <div class="line-div"></div>
                         <p class="pera">Rooted in ancient Vaastu and wrapped in nature’s
@@ -120,13 +123,13 @@
             </div>
         </section>
 
-        <section class="highligt-section" id="highligt-section">
+        <section class="highligt-section" id="highlights">
             <div class="container">
-                <div class="flex-div flex justify-between">
-                    <div class="left-col">
+                <div class="flex-div flex justify-between flex-wrap">
+                    <div class="left-col mb-full">
                         <img src="assets/images/highlight.jpg" alt="highlight img">
                     </div>
-                    <div class="right-col">
+                    <div class="right-col mb-full">
                         <div class="heading-div">
                             <h3 class="section-heading red-rose-300">
                                 WHERE <b class="red-rose-400 text-red">EVERY HOME</b>
@@ -152,7 +155,7 @@
             </div>
         </section>
 
-        <section class="ancient-wisdom-section" id="ancient-wisdom-section">
+        <section class="ancient-wisdom-section" id="mudras" style="display: none;">
             <div class="container">
                 <div class="heading-div">
                     <h3 class="section-heading red-rose-300">
@@ -218,13 +221,13 @@
             </div>
         </section>
 
-        <section class="partners-section" id="partners-section">
+        <section class="partners-section" id="partners" >
             <div class="container">
                 <div class="flex-heading flex justify-between items-start">
                     <h3 class="section-heading red-rose-300">
                         The Wellness <b class="red-rose-400 text-red">Ecosystem Partners</b>
                     </h3>
-                    <div class="right-side flex">
+                    <div class="right-side flex mb-full flex-wrap">
                         <span class="red-rose-400 text-red uppercase">powered by</span>
                         <img src="assets/images/eco-partner/ileseum.png" alt="Ileseum Logo">
                     </div>
@@ -268,7 +271,7 @@
                 <div class="swiper plans-slider floor-plans-slider active-tab">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <div class="flex-card flex justify-between">
+                            <div class="flex-card flex justify-between flex-wrap">
                                 <div class="plan-content-div">
                                     <h4 class="heading red-rose-400 uppercase">FLOOR PLANS PRECISION IN EVERY INCH</h4>
                                     <div class="line-div"></div>
@@ -283,7 +286,7 @@
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="flex-card flex justify-between">
+                            <div class="flex-card flex justify-between flex-wrap">
                                 <div class="plan-content-div">
                                     <h4 class="heading red-rose-400 uppercase">FLOOR PLANS PRECISION IN EVERY INCH</h4>
                                     <div class="line-div"></div>
@@ -298,7 +301,7 @@
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="flex-card flex justify-between">
+                            <div class="flex-card flex justify-between flex-wrap">
                                 <div class="plan-content-div">
                                     <h4 class="heading red-rose-400 uppercase">FLOOR PLANS PRECISION IN EVERY INCH</h4>
                                     <div class="line-div"></div>
@@ -314,7 +317,7 @@
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="flex-card flex justify-between">
+                            <div class="flex-card flex justify-between flex-wrap">
                                 <div class="plan-content-div">
                                     <h4 class="heading red-rose-400 uppercase">FLOOR PLANS PRECISION IN EVERY INCH</h4>
                                     <div class="line-div"></div>
@@ -330,7 +333,7 @@
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="flex-card flex justify-between">
+                            <div class="flex-card flex justify-between flex-wrap">
                                 <div class="plan-content-div">
                                     <h4 class="heading red-rose-400 uppercase">FLOOR PLANS PRECISION IN EVERY INCH</h4>
                                     <div class="line-div"></div>
@@ -346,7 +349,7 @@
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="flex-card flex justify-between">
+                            <div class="flex-card flex justify-between flex-wrap">
                                 <div class="plan-content-div">
                                     <h4 class="heading red-rose-400 uppercase">FLOOR PLANS PRECISION IN EVERY INCH</h4>
                                     <div class="line-div"></div>
@@ -372,7 +375,7 @@
                 <div class="swiper plans-slider master-plans-slider">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <div class="flex-card flex justify-between">
+                            <div class="flex-card flex justify-between flex-wrap">
                                 <div class="plan-content-div">
                                     <h4 class="heading red-rose-400 uppercase">Master PLANS PRECISION IN EVERY INCH</h4>
                                     <div class="line-div"></div>
@@ -397,7 +400,8 @@
         </section>
 
         <section class="virtual-visit-section" id="virtual-visit-section">
-            <img class="lg-image" src="assets/images/virtual-img-large.webp" alt="virtual-img-large">
+            <img class="lg-image lg-block" src="assets/images/virtual-img-large.webp" alt="virtual-img-large">
+            <img class="lg-image sm-block" src="assets/images/virtual-img-mb.webp" alt="virtual-img-large">
             <div class="container">
                 <div class="abs-div">
                     <div class="heading-div">
@@ -417,7 +421,7 @@
             </div>
         </section>
 
-        <section class="amenties-section" id="amenties-section">
+        <section class="amenties-section" id="amenities">
             <div class="container">
                 <div class="heading-div">
                     <h3 class="section-heading red-rose-300">DESIGNED TO ENHANCE</h3>
@@ -473,15 +477,15 @@
         </section>
 
         <section class="club-house-section" id="club-house-section">
-            <img class="lg-img" src="assets/images/clubhouse.webp"
-                alt="ARRIVE INTO AN EXTRAVAGANT CLUBHOUSE FOR HOLISTIC WELL-BEING">
+            <img class="lg-img lg-block" src="assets/images/clubhouse.webp" alt="ARRIVE INTO AN EXTRAVAGANT CLUBHOUSE FOR HOLISTIC WELL-BEING">
+            <img class="lg-img sm-block" src="assets/images/clubhouse-mb.webp" alt="ARRIVE INTO AN EXTRAVAGANT CLUBHOUSE FOR HOLISTIC WELL-BEING">
             <div class="container">
-                <div class="heading-div flex justify-between">
-                    <h5 class="section-heading red-rose-300 uppercase">ARRIVE INTO AN
+                <div class="heading-div flex justify-between flex-wrap">
+                    <h5 class="section-heading red-rose-300 uppercase mb-full">ARRIVE INTO AN
                         <b class="red-rose-400 uppercase">EXTRAVAGANT CLUBHOUSE</b>FOR HOLISTIC
                         WELL-BEING
                     </h5>
-                    <p class="desc">In the clubhouse, luxury exists with intention. Thoughtfully designed to engage all
+                    <p class="desc mb-full">In the clubhouse, luxury exists with intention. Thoughtfully designed to engage all
                         the
                         senses, it fosters holistic wellness that inspires connection, cultivates tranquility and
                         enriches daily life. Whether you seek the buzz of camaraderie or the hush of retreat,
@@ -490,18 +494,18 @@
             </div>
         </section>
 
-        <section class="location-adv-section" id="location-adv-section">
+        <section class="location-adv-section" id="location-advantage">
             <div class="container">
                 <div class="heading-div flex justify-between">
                     <h5 class="section-heading red-rose-300 uppercase">CLOSE TO EVERYTHING,
                         <b class="red-rose-400 uppercase text-red">CLOSER TO BALANCE OF LIFE.</b>
                     </h5>
                 </div>
-                <div class="flex-div flex justify-between items-center">
-                    <div class="map-div">
+                <div class="flex-div flex justify-between items-center flex-wrap">
+                    <div class="map-div mb-full">
                         <img src="assets/images/map.webp" alt="loation map">
                     </div>
-                    <ul class="location-adv-list capitalize">
+                    <ul class="location-adv-list capitalize mb-full">
                         <li>10 mins to Delhi</li>
                         <li>15 mins to IGI Airport</li>
                         <li> 15 mins to Aerocity</li>
@@ -516,7 +520,7 @@
             </div>
         </section>
 
-        <section class="gallery-section" id="gallery-section">
+        <section class="gallery-section" id="gallery">
             <div class="container">
                 <div class="heading-div flex justify-between">
                     <h5 class="section-heading red-rose-300 uppercase">
@@ -575,12 +579,12 @@
 
         <section class="about-builder" id="about-builder">
             <div class="container">
-                <div class="flex-div flex justify-between">
-                    <h5 class="section-heading red-rose-300 uppercase">
+                <div class="flex-div flex justify-between flex-wrap">
+                    <h5 class="section-heading red-rose-300 uppercase mb-full lg-block">
                         <b class="red-rose-400 uppercase text-red">ABOUT BUILDER </b>
                     </h5>
-                    <div class="content-div">
-                        <img src="assets/images/common/logo-dark.png" alt="builder-logo">
+                    <div class="content-div mb-full">
+                        <img class="builder-img" src="assets/images/common/logo-dark.png" alt="builder-logo">
                         <p class="desc">Signature Global, India’s leading real estate development company, is reshaping
                             the housing
                             market of northern India with a vision anchored in trust, innovation, and sustainability.

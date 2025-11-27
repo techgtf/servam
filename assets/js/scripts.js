@@ -43,7 +43,7 @@ let partnersSlider = new Swiper(".partners-slider", {
     },
     breakpoints: {
         0: {
-            slidesPerView: 2,
+            slidesPerView: 3,
         },
         768: {
             slidesPerView: 4,
@@ -71,13 +71,6 @@ let floorPlansSlider = new Swiper(".floor-plans-slider", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
-    // effect: "fade",
-    // fadeEffect: {
-    //     crossFade: true,
-    // },
-    // mousewheel: true,
-    // keyboard: true,
-    // grabCursor: true,  
 });
 
 let masterPlansSlider = new Swiper(".master-plans-slider", {
@@ -103,6 +96,14 @@ var swiper = new Swiper(".gallerySwiper", {
     pagination: {
         el: ".swiper-pagination-gl",
         clickable: true,
+    },
+    breakpoints: {
+        0: {
+            spaceBetween: 10,
+        },
+        768: {
+            spaceBetween: 50,
+        },
     }
 });
 
