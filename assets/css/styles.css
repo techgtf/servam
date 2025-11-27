@@ -125,6 +125,7 @@ body{background: var(--primary); overflow-x: hidden;}
 
 
 
+
 /* .hero-absolute-logo */
 .hero-absolute-logo{position: absolute; width: fit-content; text-align: center; z-index: 1; margin: 0 auto; left: 0; right: 0; top: 100px; }
 .hero-absolute-logo .project-logo{width: 250px; margin: 0 auto;}
@@ -140,6 +141,10 @@ body{background: var(--primary); overflow-x: hidden;}
 .hero-content .button{border: 2px solid #dddddd57; background: #FFFFFF1A; display: flex; justify-content: center; margin: 0 auto; margin-top: 40px;}
 .hero-content .button:hover{background: var(--secondary); }
 
+
+/* .main-section */
+.main-section{display: none;}
+.main-section.active{display: block;}
 
 /* .overview-section */
 .overview-section{padding-top: 80px; overflow: hidden;}

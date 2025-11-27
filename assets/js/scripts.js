@@ -1,3 +1,18 @@
+let mainSection = $(".main-section");
+let firstHeroImage = $(".hero-img-div img").first();
+
+if (firstHeroImage[0].complete) {
+    mainSection.addClass("active");
+} else {
+    firstHeroImage.on("load", function () {
+        mainSection.addClass("active");
+    });
+}
+
+
+
+
+
 let header = $(".header-main");
 $(window).scroll(function () {
     var scroll = $(window).scrollTop();
