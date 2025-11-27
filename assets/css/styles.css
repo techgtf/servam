@@ -285,7 +285,7 @@ body{background: var(--primary); overflow-x: hidden;}
 
 /* .img-modal */
 .img-modal {position: fixed;inset: 0;background: rgba(0,0,0,0.9);display: none;justify-content: center;align-items: center;z-index: 99999;}
-.img-modal-content {width: 90%; margin: 0 auto; padding: 40px; max-width: 900px;position: relative;}
+.img-modal-content {width: 90%; margin: 0 auto; padding: 40px; max-width: 900px;position: relative; display: flex; justify-content: center; align-items: center; height: 100%;}
 .img-modal .close-modal {position: absolute;right: 15px;top: 5px;font-size: 40px;color: #fff;cursor: pointer;z-index: 1000;}
 .img-modal .modal-swiper img {width: auto; margin: 0 auto;}
 
