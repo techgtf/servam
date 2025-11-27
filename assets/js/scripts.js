@@ -10,9 +10,6 @@ if (firstHeroImage[0].complete) {
 }
 
 
-
-
-
 let header = $(".header-main");
 $(window).scroll(function () {
     var scroll = $(window).scrollTop();
@@ -122,4 +119,60 @@ var swiper = new Swiper(".gallerySwiper", {
     }
 });
 
+$(document).ready(function () {
+
+    function animateOnScroll() {
+        $(".animate").each(function () {
+            let elementTop = $(this).offset().top;
+            let elementHeight = $(this).outerHeight();
+            let windowBottom = $(window).scrollTop() + $(window).height();
+            // Trigger when 20% of element is visible
+            if (windowBottom > elementTop + elementHeight * 0.2) {
+                $(this).addClass("animate-show");
+            }
+        });
+    }
+    // Run on scroll
+    $(window).on("scroll", animateOnScroll);
+    // Run on page load
+    animateOnScroll();
+});
+
+// custom images modal
+$(document).ready(function () {
+    let modal = $("#imgModal");
+    let swiperInstance;
+    $(document).on("click", ".gallery-img", function () {
+        let section = $(this).closest("section");
+        let images = section.find(".gallery-img");
+
+        let wrapper = $(".modal-swiper .swiper-wrapper");
+        wrapper.html("");
+
+        images.each(function () {
+            let thumbSrc = $(this).attr('src');
+            let largeSrc = $(this).attr('data-large') || thumbSrc; // It accepts both src and data-large
+
+            wrapper.append(`
+                <div class="swiper-slide">
+                    <img src="${largeSrc}" />
+                </div>
+            `);
+        });
+        modal.fadeIn(200);
+        if (swiperInstance) swiperInstance.destroy(true, true);
+        swiperInstance = new Swiper(".modal-swiper", {
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev"
+            }
+        });
+        let index = images.index($(this));
+        swiperInstance.slideToLoop(index, 0);
+    });
+    $(".close-modal, #imgModal").on("click", function (e) {
+        if (e.target === this) $("#imgModal").fadeOut(200);
+    });
+});
 
