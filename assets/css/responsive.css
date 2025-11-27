@@ -104,6 +104,7 @@
   .location-adv-section{margin-bottom: 0;}
   .location-adv-section::after{top: 100px; height: 312px;width: 44%;}
   .location-adv-section::before{bottom: inherit; top: 320px;width: 134px;height: 124px;background-size: contain;}
+  .location-adv-section .map-div{margin-top: 30px;}
   .location-adv-section .flex-div{color: #000;}
   .location-adv-section .location-adv-list{padding-top: 106px;}
   .location-adv-section .location-adv-list li{filter: hue-rotate(180deg) brightness(0) invert(0);padding-bottom: 15px;}
