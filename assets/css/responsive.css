@@ -65,6 +65,22 @@
   .highligt-section .flex-div{flex-direction: column-reverse;}
   .highligt-section .right-col{padding-bottom: 30px;}
 
+  /* .ancient-wisdom-section  */
+  .ancient-wisdom-section{padding-bottom: 40px;}
+  .ancient-wisdom-section::after{display: none;}
+  .ancient-wisdom-section .harmony-title {font-size: 17px;padding-bottom: 0px;}
+  .ancient-wisdom-section .harmony-content {padding: 10px; background-color: #efdfc6eb;}
+  .ancient-wisdom-section .harmony-flex{position: relative; color: var(--secondary);}
+  .ancient-wisdom-section .harmony-roudned-div{ height: 300px; width: 300px; margin: 0 auto; margin-top: 120px; border: 1px solid #000; border-radius: 100%;}
+  .ancient-wisdom-section .harmony-box{position: absolute;}
+  .ancient-wisdom-section .harmony-flex .imgs{height: 104px;}
+  .ancient-wisdom-section .harmony-box.box_1{left: 39%;}
+  .ancient-wisdom-section .harmony-box.box_2{left: 72%;top: 30%;}
+  .ancient-wisdom-section .harmony-box.box_3{left: 64%;bottom: -2%;}
+  .ancient-wisdom-section .harmony-box.box_4{left: 29%;bottom: -11%;}
+  .ancient-wisdom-section .harmony-box.box_5{left: 3%;bottom: 3%;}
+  .ancient-wisdom-section .harmony-box.box_6{top: 25%;left: 8%;}
+
 
   /* .partners-section */
   .partners-section{padding-top: 120px;}
