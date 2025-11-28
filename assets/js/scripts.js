@@ -42,7 +42,6 @@ function toggleModal() {
 
 let partnersSlider = new Swiper(".partners-slider", {
     spaceBetween: 30,
-    loop: true,
     autoplay: {
         delay: 1500,
         disableOnInteraction: false,
@@ -51,18 +50,35 @@ let partnersSlider = new Swiper(".partners-slider", {
         el: ".swiper-pagination",
         clickable: true,
     },
+
     breakpoints: {
         0: {
             slidesPerView: 3,
+            grid: {
+                rows: 2,
+                fill: "row",
+            },
         },
         768: {
             slidesPerView: 4,
+            loop: true,
+            grid: {
+                rows: 1,
+            },
         },
         1024: {
             slidesPerView: 6,
+            loop: true,
+            grid: {
+                rows: 1,
+            },
         },
         1440: {
             slidesPerView: 7,
+            loop: true,
+            grid: {
+                rows: 1,
+            },
         },
     },
 });

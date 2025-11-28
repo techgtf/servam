@@ -96,7 +96,7 @@
 
 
   /* .floor-and-master-plan  */
-  .floor-and-master-plan{margin-top: 120px; padding-bottom: 0;}
+  .floor-and-master-plan{margin-top: 80px; padding-bottom: 0;}
   .floor-and-master-plan::before {bottom: 0;width: 140px;height: 91px;background-size: contain;}
   .floor-and-master-plan::after{height: 40%; top: inherit; bottom: 0;}
   .floor-and-master-plan .container{padding-right: 15px;}
@@ -113,6 +113,7 @@
   .virtual-visit-section .line-div {height: 55px;}
   .virtual-visit-section .abs-div {width: 65%;}
   .virtual-visit-section .img-div .btn-btn{padding: 10px 7px;}
+  .virtual-visit-section .img-div{width: 100%;}
 
   /* .amenties-section */
   .amenties-section .heading-div{padding-bottom: 30px;}
@@ -127,7 +128,7 @@
 
   /* .location-adv-section */
   .location-adv-section{margin-bottom: 0;}
-  .location-adv-section::after{top: 100px; height: 312px;width: 44%;}
+  .location-adv-section::after{top: 120px; height: 312px;width: 44%;}
   .location-adv-section::before{bottom: inherit; top: 320px;width: 134px;height: 124px;background-size: contain;}
   .location-adv-section .map-div{margin-top: 30px;}
   .location-adv-section .flex-div{color: #000;}
