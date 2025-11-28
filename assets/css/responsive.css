@@ -9,6 +9,11 @@
 
   .hero-content .small-heading{font-size: 16px;}
   .hero-content .large-heading{font-size: 28px; padding-top: 25px;}
+
+  .club-house-section::after{background: linear-gradient(360deg, rgb(0 0 0 / 10%) 0%, rgba(0, 0, 0, 0.8) 100%); }
+  .club-house-section .container{top: 20%;}
+  .club-house-section .lg-img{height: 90vh;}
+
 }
 
 /* tab and mobile */
@@ -103,6 +108,7 @@
   .floor-and-master-plan .ctrl-btns{padding-right: 0; padding-top: 20px;}
 
   /* .virtual-visit-section */
+  .virtual-visit-section .lg-image{height: auto;}
   .virtual-visit-section .heading-div{padding-bottom: 20px;}
   .virtual-visit-section .line-div {height: 55px;}
   .virtual-visit-section .abs-div {width: 65%;}
@@ -125,7 +131,7 @@
   .location-adv-section::before{bottom: inherit; top: 320px;width: 134px;height: 124px;background-size: contain;}
   .location-adv-section .map-div{margin-top: 30px;}
   .location-adv-section .flex-div{color: #000;}
-  .location-adv-section .location-adv-list{padding-top: 106px;}
+  .location-adv-section .location-adv-list{padding-top: 85px;}
   .location-adv-section .location-adv-list li{filter: hue-rotate(180deg) brightness(0) invert(0);padding-bottom: 15px;}
 
   /* .gallerySwiper */

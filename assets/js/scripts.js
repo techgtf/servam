@@ -9,7 +9,6 @@ if (firstHeroImage[0].complete) {
     });
 }
 
-
 let header = $(".header-main");
 $(window).scroll(function () {
     var scroll = $(window).scrollTop();
@@ -40,7 +39,6 @@ const modal = $(".custom-modal")
 function toggleModal() {
     modal.toggleClass("show-modal");
 }
-
 
 let partnersSlider = new Swiper(".partners-slider", {
     spaceBetween: 30,
@@ -76,7 +74,6 @@ $(".plans-btn").on("click", function () {
     $(".plans-slider").removeClass("active-tab");
     $("." + target).addClass("active-tab");
 })
-
 
 let floorPlansSlider = new Swiper(".floor-plans-slider", {
     navigation: {
@@ -142,16 +139,17 @@ $(document).ready(function () {
 $(document).ready(function () {
     let modal = $("#imgModal");
     let swiperInstance;
-    $(document).on("click", ".gallery-img", function () {
+    $(document).on("click", ".modal-openr", function () {
         let section = $(this).closest("section");
-        let images = section.find(".gallery-img");
+        let images = section.find(".modal-openr");
 
         let wrapper = $(".modal-swiper .swiper-wrapper");
         wrapper.html("");
 
         images.each(function () {
-            let thumbSrc = $(this).attr('src');
-            let largeSrc = $(this).attr('data-large') || thumbSrc; // It accepts both src and data-large
+            // let thumbSrc = $(this).attr('src');
+            // let largeSrc = $(this).attr('data-large') || thumbSrc; // It accepts both src and data-large
+            let largeSrc = $(this).attr('data-large') 
 
             wrapper.append(`
                 <div class="swiper-slide">
