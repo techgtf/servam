@@ -40,7 +40,7 @@
   
   .mobile-section {display: flex}
 
-  .hero-section{color: #000; text-align: center;}
+  .hero-section{color: #000; text-align: center; min-height: 100vh;}
   .hero-section::after{display: none;}
   .hero-absolute-logo{position: unset;padding: 19px 15px; margin-bottom: 15px; width: 100%; border-bottom: 1px solid #000;}
   .hero-absolute-logo .location {justify-content: center;}
