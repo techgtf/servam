@@ -162,6 +162,7 @@ body{background: var(--primary); overflow-x: hidden;}
 .overview-section .main-img{width: 85%;}
 .overview-section .abs-img{position: absolute; top: 0; right: -15%; z-index: -1;}
 .overview-section .abs-img-1{bottom: 0; left: 0; top: inherit;}
+.overview-section .artistic{bottom: 15%;}
 
 /* .highligt-section */
 .highligt-section{margin-top: 80px; position: relative;}
